@@ -14,11 +14,11 @@ $buyit = urlencode("<b>Use <code>.credits</code> Know Your Available Credits
 -> 500 CREDITS + PREMIUM ACCESS - 15$
 -> 1000 CREDITS + PREMIUM ACCESS - 25$
 >> PING <code>@r0ld3x</code> For Purchasing
-Note -⟩ We Only Accept Upi And Crytpo</b>");
+Note -⟩ We Only Accept Airtime - PayPal.</b>");
 
 $nopre = urlencode("<b>YOU NEED TO BE PREMIUM TO USE THIS COMMAND.
 Hit /buy to purchase</b>");
-$botToken =  "<Bottoken>";
+$botToken =  "5362532647:AAHrgxMVVcQaGrNk5O_mnlKP1Xx5f_GIkig";
 $website = "https://api.telegram.org/bot".$botToken;
 $update = file_get_contents('php://input');
 echo $update;
@@ -73,7 +73,7 @@ Mass <code>.mass</code>[<i>$islive</i>]
 Razorpay <code>.rp</code>[<i>$islive</i>]
 </b>");
 $free = json_encode($keyboard);
-        file_get_contents("https://api.telegram.org/bot<Bottoken>/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
+        file_get_contents("https://api.telegram.org/bot5362532647:AAHrgxMVVcQaGrNk5O_mnlKP1Xx5f_GIkig/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
 
 }
 if ($cdata2 == "paid"){
@@ -85,7 +85,7 @@ $islive = 'ON';
            ['text' => 'Free', 'callback_data' => 'free'], 
            ['text' => 'Others', 'callback_data' => 'others'], 
            ['text' => 'Buy', 'callback_data' => 'buy'], 
-           // ['text' => 'Buy Now', 'url' => 'https://t.me/r0ld3x'], 
+           // ['text' => 'Buy Now', 'url' => 'https://t.me/TheRealMabidax'], 
            ['text' => 'Finalize', 'callback_data' => 'end']
         ]
         ]];
@@ -96,13 +96,13 @@ Stripe CHARGE 4$<code>.stp</code>[<i>$islive</i>]
 Stripe CHARGE 20$<code>.rape</code>[<i>$islive</i>]
 Stripe CHARGE 25$<code>.sto</code>[<i>$islive</i>]
 Stripe CHARGE AUTH<code>.sa</code>[<i>$islive</i>]
-BRAINTREE <code>.btu</code>[<i>$islive</i>]
+BRAINTREE <code>.b3</code>[<i>$islive</i>]
 SQUARE UP <code>.sq</code>[<i>$islive</i>]
 SK Mass <code>.mchk</code>[<i>$isalive</i>]
 Auth <code>.aut</code>[<i>$islive</i>]
 </b>");
 $free = json_encode($keyboard);
-        file_get_contents("https://api.telegram.org/bot<Bottoken>/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
+        file_get_contents("https://api.telegram.org/bot5362532647:AAHrgxMVVcQaGrNk5O_mnlKP1Xx5f_GIkig/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
 
 }
 if ($cdata2 == "others"){
@@ -130,9 +130,9 @@ $freecommands = urlencode("<b>->> <code>.credits</code> Know Your Available Cred
 ->> <code>.socks4</code> Get Socks4 Proxies
 ->> <code>.socks5</code> Get Socks5 Proxies
 
-Note-⟩ If you get any type of bugs in this bot please inform our team at @r0ld3xrobot</b>");
+Note-⟩ If you get any type of bugs in this bot please inform our team at @TheRealMabidax</b>");
 $free = json_encode($keyboard);
-        file_get_contents("https://api.telegram.org/bot<Bottoken>/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
+        file_get_contents("https://api.telegram.org/bot5362532647:AAHrgxMVVcQaGrNk5O_mnlKP1Xx5f_GIkig/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
 
 }
 if ($cdata2 == "buy"){
@@ -150,20 +150,20 @@ $freecommands = urlencode("<b>Use <code>.credits</code> Know Your Available Cred
 -> 1000 CREDITS + PREMIUM ACCESS - 25$
 Note-⟩ We Only Accept [UPI][GIFT CARDS][CRYTPO]</b>");
 $free = json_encode($keyboard);
-        file_get_contents("https://api.telegram.org/bot<Bottoken>/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
+        file_get_contents("https://api.telegram.org/bot5362532647:AAHrgxMVVcQaGrNk5O_mnlKP1Xx5f_GIkig/editMessageText?chat_id=$cchatid2&text=$freecommands&message_id=$cmessage_id2&parse_mode=HTML&reply_markup=$free");
 
 }
 elseif ($cdata2 == "end"){ 
 $finalize = urlencode("<b>Inline Mode Closed  <a href='tg://user?id=$gId'>$firstname</a></b>"); 
-file_get_contents("https://api.telegram.org/bot<Bottoken>/editMessageText?chat_id=$cchatid2&text=$finalize&message_id=$cmessage_id2&parse_mode=HTML");
+file_get_contents("https://api.telegram.org/bot5362532647:AAHrgxMVVcQaGrNk5O_mnlKP1Xx5f_GIkig/editMessageText?chat_id=$cchatid2&text=$finalize&message_id=$cmessage_id2&parse_mode=HTML");
 }
 if($sender_chat == 'channel'){
 exit();
 }
 if(empty($username)){
-$username = "Set Username Noob";
+$username = "@TheRealMabidax";
 }elseif(empty($newusername)){
-$newusername = "Set Username Noob";
+$newusername = "@TheRealMabidax";
 }
 if(!empty($r_id)){
 $r_msg = $update["message"]["reply_to_message"]["text"]; 
@@ -191,27 +191,27 @@ bot('sendmessage', [
 HEY <a href='tg://user?id=$gId'>$newfirstname</a>
 WELCOME TO $chatname and chat id of this group is  <code>$chatId</code> and your id is <code>$gId</code>
 
-THIS BOT IS MADE WITH ♥️ BY  <code>@r0ld3x</code> </b>",
+THIS BOT IS MADE WITH ♥️ BY  <code>@TheRealMabidax</code> </b>",
  'parse_mode'=>'HTML',
  'reply_markup' => $free,
  ]);
         exit();
 }
 
-$premium_id = (array("1792903396","1317173146"));
-$premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298504199","-1001434792768"));
+$premium_id = (array("1324149659"));
+$premiumgp = (array("-1001725055519"));
         $keyboard = json_encode([
 'inline_keyboard' => [
-[['text' => "OWNER", 'url' => "https://t.me/r0ld3x"],]
+[['text' => "OWNER", 'url' => "https://t.me/TheRealMabidax"],]
 ]]);
                 $keyboard1 = json_encode([
 'inline_keyboard' => [
-[['text' => "CHANNEL", 'url' => "https://t.me/RoldexVerse"],
-['text' => "GROUP", 'url' => "https://t.me/RoldexVerseChats"],]
+[['text' => "CHANNEL", 'url' => "https://t.me/TheRealMabidax"],
+['text' => "GROUP", 'url' => "https://t.me/TheRealMabidax"],]
 ]]);
 
 // if(!in_array($chatId, $premiumgp)){
-	// $tch = json_decode(file_get_contents("https://api.telegram.org/bot<Bottoken>/getChatMember?chat_id=@roldexverse&user_id=".$gId))->result->status;
+	// $tch = json_decode(file_get_contents("https://api.telegram.org/bot5362532647:AAHrgxMVVcQaGrNk5O_mnlKP1Xx5f_GIkig/getChatMember?chat_id=@roldexverse&user_id=".$gId))->result->status;
 	$user = file_get_contents('users.txt');
         $members = explode("\n", $user);
         if (!in_array($gId, $members)) {
@@ -226,20 +226,20 @@ $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298
 // 
 // You Need To Join My Update Channel To Get Regular Updates
 // 
-// Made With ♥️ By @r0ld3x
+// Made With ♥️ By @TheRealMabidax
 // USE /start AFTER JOIN",
  // 'parse_mode'=>'HTML',
  // 'reply_markup' =>  $keyboard1,
 // ]);
 // exit();
 // }
-        	// $tch = json_decode(file_get_contents("https://api.telegram.org/bot<Bottoken>/getChatMember?chat_id=@roldexversechats&user_id=".$gId))->result->status;
+        	// $tch = json_decode(file_get_contents("https://api.telegram.org/bot5362532647:AAHrgxMVVcQaGrNk5O_mnlKP1Xx5f_GIkig/getChatMember?chat_id=@roldexversechats&user_id=".$gId))->result->status;
 // if($tch != 'member' && $tch != 'creator' && $tch != 'administrator'){
 // bot('sendMessage',['chat_id'=>$chatId,'reply_to_message_id'=>$message_id,'text'=>"Sorry <a href='tg://user?id=$gId'>$firstname</a>
 // 
 // You Need To Join My Update Channel To Get Regular Updates
 // 
- // Made With ♥️ By @r0ld3x And @RoldexVerse
+ // Made With ♥️ By @TheRealMabidax
 // 
 // USE /start AFTER JOIN",
  // 'parse_mode'=>'HTML',
@@ -327,7 +327,7 @@ if(file_exists(getcwd().('/cookie.txt'))){
 define('API_KEY',$botToken);
 
  
-$link = mysqli_connect("localhost", "root", "", "demo");
+$link = mysqli_connect("localhost", "root", "", "test");
  
 // Check connection
 if($link === false){
@@ -886,7 +886,7 @@ function checkrole($chatId,$message_id,$keyboard,$nopre,$gId){
     $final2 = json_encode($json_array);
     $credits = trim(strip_tags(getStr($final2, '"credits":"','"')));
 mysqli_close($link);
-$link = mysqli_connect("localhost", "root", "", "demo");
+$link = mysqli_connect("localhost", "root", "", "test");
     $sql = "SELECT role FROM persons WHERE userid='$gId'";
     $result20 = mysqli_query($link, $sql);
     $json_array = [];
@@ -897,7 +897,7 @@ $link = mysqli_connect("localhost", "root", "", "demo");
     $role = trim(strip_tags(getStr($final201, '"role":"','"')));
 mysqli_close($link);
 if($role == 'MEMBER' and $credits < 5){
-$link = mysqli_connect("localhost", "root", "", "demo");
+$link = mysqli_connect("localhost", "root", "", "test");
 $sql = "UPDATE persons SET role = 'USER' WHERE persons.userid='$gId'";
 $result = mysqli_query($link, $sql);
 $json_array = [];
@@ -908,12 +908,12 @@ $final = json_encode($json_array);
     $result = "<i>SORRY TO SAY THAT</i>\n <b> YOU HAVE BEEN DEMOTED TO FREE USER BECAUSE YOU DONT HAVE CREDITS NOW \n YOU CAN BUY CREDITS NOW BY HITTING /buy </b>";
   reply_to($chatId,$message_id,$keyboard,$result);
 }elseif(empty($credits)){
-$link = mysqli_connect("localhost", "root", "", "demo");
+$link = mysqli_connect("localhost", "root", "", "test");
 $sql = "INSERT INTO persons (userid, role, username, credits) VALUES ('$userId', 'USER', '$username', '01')";
     $result = "<i>User Created Successfully</i>";
   reply_to($chatId,$message_id,$keyboard,$result);
 }
-// $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298504199","-1001434792768","-1001478277738","-1001350709511","-1001348664765","-1001325488699"));
+// $premiumgp = (array("-1001725055519"));
     $che = bannedbin($bin);
 	$user = file_get_contents('users.txt');
         $members = explode("\n", $user);
@@ -926,9 +926,9 @@ $sql = "INSERT INTO persons (userid, role, username, credits) VALUES ('$userId',
 $freeuser = urlencode("<b>HEY You dont have permission to use me here 
 <i> take premium access to use here</i></b>");
 $freeuser1 = urlencode("<b>HEY You dont have permission to use me here 
-<i>take group access from <code>@r0ld3x</code> to use here</i></b>");
+<i>take group access from <code>@TheRealMabidax</code> to use here</i></b>");
  
-$link = mysqli_connect("localhost", "root", "", "demo");
+$link = mysqli_connect("localhost", "root", "", "test");
 $sql = "SELECT role FROM persons WHERE userid='$gId'";
 $result20 = mysqli_query($link, $sql);
 $json_array = [];
