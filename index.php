@@ -13,8 +13,8 @@ $buyit = urlencode("<b>Use <code>.credits</code> Know Your Available Credits
 -> 300 CREDITS + PREMIUM ACCESS - 10$
 -> 500 CREDITS + PREMIUM ACCESS - 15$
 -> 1000 CREDITS + PREMIUM ACCESS - 25$
->> PING <code>@r0ld3x</code> For Purchasing
-Note -⟩ We Only Accept Airtime - PayPal.</b>");
+>> PING <code>@TheRealMabidax</code> For Purchasing
+Note -⟩ We Only Accept Airtime - PayPal...</b>");
 
 $nopre = urlencode("<b>YOU NEED TO BE PREMIUM TO USE THIS COMMAND.
 Hit /buy to purchase</b>");
